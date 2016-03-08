@@ -29,7 +29,7 @@
     <script>
        var app = angular.module('plunker', ['nvd3']);
        app.controller('myController', ['$scope', '$http',function($scope,$http) {
-       var colors = ["red", "green", "blue"];
+       var colors = ["red", "green", "blue", "yellow", "black"];
        $scope.clickButton = function() {
        $http.get('data.json').success(function(data) {
        console.log("Hello")
