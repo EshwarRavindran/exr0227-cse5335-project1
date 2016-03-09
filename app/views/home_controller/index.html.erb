@@ -67,12 +67,12 @@
         <div ng-controller="myController">
           <button ng-click='clickButton()'><h1>Click Me</h1></button>
           
-          <ng-repeat="item in items">
-          <ng-repeat="(key, val) in item">{{key}}: {{val}}
+          <!-- <ng-repeat="item in items">
+          <ng-repeat="(key, val) in item">{{key}}: {{val}} -->
           <nvd3 options="options" data = "items"></nvd3>
           <table>  
           <tr ng-repeat="item in items">
-            <td ng-repeat="(key, val) in item">{{}}: {{}}
+            <td ng-repeat="(key, val) in item">{{key}}: {{val}}
             </td>
           </tr>
           </table>
