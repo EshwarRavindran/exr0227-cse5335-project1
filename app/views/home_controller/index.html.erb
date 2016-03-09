@@ -27,7 +27,7 @@
     <script>
        var app = angular.module('sample', ['nvd3']);
        app.controller('myController', ['$scope', '$http',function($scope,$http) {
-       var colors = ["lime", "olive", "blue diamond", "yellow", "black", "brown", "orange", "darkblue", "cyan","violet"];
+       var colors = ["lime", "olive", "blue", "yellow", "black", "brown", "orange", "darkblue", "cyan","violet"];
        $scope.clickButton = function() {
        $http.get('centuries.json').success(function(data) {
        $scope.items = data;
