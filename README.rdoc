@@ -1,5 +1,19 @@
         == README
 
         a. What server framework did you choose and why?
+                I used Ruby on Rails as server framework. It is one of the most flexible frameworks used for web development and it made                 my programming simpler.
+        b. What client framework did you choose and why?
+                I used AngularJS as client framework. I used ot because it supports single page applications.
+        c. What aspect of the implementation did you find easy, if any, and why?
+                I found the configuration and deployment easy since i used Heroku server and the implementaion steps were easy.
+        d. What aspect of the implementation did you find hard, if any, and why?
+                It was difficult to implement the table as chart as it involved lot of dependencies.
+        e. What components OTHER than your client and server framework did you install, if any, and if so, what is their purpose for your            solution?
+                Some of the components I installed were
+                Bundler - Helps to install exact version of the gems that are neeeded
+                Bower- Helps to keep track of packages and making sure they are up-to date
+                npm- Helps to manage dependencies of an application
+        f. What Ubuntu commands are required to deploy and run your server?
+
   
   
