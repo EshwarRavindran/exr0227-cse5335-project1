@@ -1,14 +1,14 @@
 
    [
     {
-        "key": "Sachin Tendulkar",
-        "y": "100"
+        "player": "Sachin Tendulkar",
+        "centuries": "100"
                 
     },
 
     {
-        "key": "Ricky Ponting",
-        "y": "30"
+        "player": "Ricky Ponting",
+        "centuries": "30"
         
 
         
@@ -16,58 +16,58 @@
     },
 
     {
-        "key": "Sangakkara",
-        "y": "29"
+        "player": "Sangakkara",
+        "centuries": "29"
         
          
     },
 
     {
-        "key": "Sehwag",
-        "y": "25"
+        "player": "Sehwag",
+        "centuries": "30"
         
          
     },
 
     {
-        "key": "Kohli",
-        "y": "25"
+        "player": "Kohli",
+        "centuries": "16"
         
          
     },
 
     {
-        "key": "Dhoni",
-        "y": "24"
+        "player": "Dhoni",
+        "centuries": "40"
         
          
     },
 
 
     {
-        "key": "Rahul Dravid",
-        "y": "23"
+        "player": "Rahul Dravid",
+        "centuries": "15"
         
          
     },
 
     {
-        "key": "Warner",
-        "y": "22"
+        "player": "Warner",
+        "centuries": "2"
         
          
     },
 
     {
-        "key": "Raina",
-        "y": "20"
+        "player": "Raina",
+        "centuries": "20"
         
          
     },
 
     {
-        "key": "Yuvraj",
-        "y": "20"
+        "player": "yuvraj",
+        "centuries": "20"
         
          
     }

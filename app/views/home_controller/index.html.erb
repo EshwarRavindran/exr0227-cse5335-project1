@@ -35,8 +35,8 @@
             chart: {
               type: 'pieChart',
               height: 500,
-              x: function(a){return a.key;},
-              y: function(a){return a.y;},
+              x: function(a){return a.player;},
+              y: function(a){return a.centuries;},
               color: function(a,i){
                 return (a.data && a.data.color) || colors[i % colors.length]
               },
@@ -66,9 +66,6 @@
      <div ng-app="sample">
         <div ng-controller="myController">
           <button ng-click='clickButton()'><h1>Click Me</h1></button>
-          
-          <!-- <ng-repeat="item in items">
-          <ng-repeat="(key, val) in item">{{key}}: {{val}} -->
           <nvd3 options="options" data = "items"></nvd3>
           <table>  
           <tr ng-repeat="item in items">
