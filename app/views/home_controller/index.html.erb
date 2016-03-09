@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="plunker">
+<html ng-app="sample">
 
   <head>
   <style>
@@ -16,7 +16,7 @@
     }
     </style>
     <meta charset="utf-8" />
-    <title>Angular-nvD3 Pie Chart</title>
+    <title>Pie Chart</title>
     <script>document.write('<base href="' + document.location + '" />');</script>
     
     <link rel="stylesheet" href="https://rawgit.com/novus/nvd3/v1.1.15-beta/nv.d3.min.css"/>
@@ -24,24 +24,21 @@
     <script src="https://rawgit.com/mbostock/d3/master/d3.min.js"></script>
     <script src="https://rawgit.com/novus/nvd3/v1.1.15-beta/nv.d3.min.js"></script>
     <script src="https://rawgit.com/krispo/angular-nvd3/v0.1.1/dist/angular-nvd3.js"></script>
-    
-    
     <script>
-       var app = angular.module('plunker', ['nvd3']);
+       var app = angular.module('sample', ['nvd3']);
        app.controller('myController', ['$scope', '$http',function($scope,$http) {
-       var colors = ["red", "green", "blue", "yellow", "black", "brown", "orange", "maroon", "purple","indigo"];
+       var colors = ["red", "olive", "blue", "yellow", "black", "brown", "orange", "darkblue", "cyan","violet"];
        $scope.clickButton = function() {
-       $http.get('data.json').success(function(data) {
-       console.log("Hello")
+       $http.get('centuries.json').success(function(data) {
        $scope.items = data;
        $scope.options = {
             chart: {
               type: 'pieChart',
               height: 500,
-              x: function(d){return d.key;},
-              y: function(d){return d.y;},
-              color: function(d,i){
-                return (d.data && d.data.color) || colors[i % colors.length]
+              x: function(a){return a.key;},
+              y: function(a){return a.y;},
+              color: function(a,i){
+                return (a.data && a.data.color) || colors[i % colors.length]
               },
               showLabels: true,
               transitionDuration: 500,
@@ -60,13 +57,13 @@
        });
   };
 }]);
-    console.log("Hello")
+    
     </script>
     
   </head>
 
   <body ng-controller="myController">
-     <div ng-app="plunker">
+     <div ng-app="sample">
         <div ng-controller="myController">
           <button ng-click='clickButton()'><h1>Click Me</h1></button>
           
